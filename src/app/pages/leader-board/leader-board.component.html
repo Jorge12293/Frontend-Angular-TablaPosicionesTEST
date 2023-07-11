@@ -1,0 +1,35 @@
+<header class="header">
+    <h1 class="header-title">League Standing</h1>
+</header>
+
+<div class="container-table">
+    <table class="table">
+        <thead>
+          <tr>
+            <th class="cell-team">Team Name</th>
+            <th class="cell-mp">MP</th>
+            <th class="cell-gf">GF</th>
+            <th class="cell-ga">GA</th>
+            <th class="cell-gd">GD</th>
+            <th class="cell-point">Point</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let team of listTeam">
+            <td  class="cell-team">
+              <div class="team-container">
+                <div class="image-container-right">
+                  <img [src]="'https://flagsapi.codeaid.io/' + team.teamName + '.png'" alt="{{ team.teamName }}"> 
+                </div>
+                <div> {{team.teamName}} </div>
+              </div>
+            </td>
+            <td class="cell-mp">{{team.matchesPlayed}}</td>
+            <td class="cell-gf">{{team.goalsFor}}</td>
+            <td class="cell-ga">{{team.goalsAgainst}}</td>
+            <td class="cell-gd">{{team.goalsFor - team.goalsAgainst}}</td>
+            <td class="cell-point">{{team.points}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>

@@ -1,0 +1,102 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); 
+
+/* ====================================================================
+   Global Styles 
+======================================================================= */
+  
+  html {
+    min-height: 100%;
+    position: relative;
+  }
+
+  body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Open Sans', 'sans-serif'; 
+  }
+
+/* ====================================================================
+   Global Styles Header Title
+======================================================================= */
+
+  .header{
+    margin-top: 60px;
+    margin-bottom: 20px;
+    text-align: center;
+  } 
+
+  .header-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #182C62;
+    margin: 0px;
+  }
+
+
+
+
+
+/* ====================================================================
+   Global Styles Tables
+======================================================================= */
+
+  .container-table{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+    
+  .table {
+    width: 90%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color:  #4B5C68;
+  }
+
+  .table th {
+    height: 40px;
+    background-color:  #E4EDF2;
+    font-weight: bold;
+    font-size: 12px;
+    vertical-align: middle;
+  }
+
+  .table td {
+    height: 69.5px;
+    vertical-align: middle;
+  }
+  
+  tr:not(:last-child) {
+    border-bottom: 0.5px solid #E4EDF2;
+  }
+
+
+/* ====================================================================
+   Global Styles Container Team 
+======================================================================= */
+
+  .team-container{
+    display: flex;
+    align-items: center;
+  }
+
+  .image-container-right img {
+    width: 53px;
+    height: 37px;
+    margin-right: 15px;
+  }
+
+  .image-container-left img {
+    width: 53px;
+    height: 37px;
+    margin-left: 15px;
+  }
+
+
+
+

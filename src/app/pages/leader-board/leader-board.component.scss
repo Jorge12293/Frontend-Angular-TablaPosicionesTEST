@@ -1,0 +1,85 @@
+/* ====================================================================
+   Style Table LeaderBoard
+======================================================================= */
+    .cell-team{
+        width: 57%;
+        text-align: start;
+        padding-left: 20px;
+    }
+
+    .cell-mp, .cell-gf, .cell-ga{
+        width: 7%;
+        text-align: center;
+    }
+
+    .cell-point{
+        width: 12%;
+        text-align: center;
+    }
+
+    .cell-gd{
+        display: none;
+    }
+
+/* ====================================================================
+   Style Table Body
+======================================================================= */
+    td.cell-team{
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    td.cell-mp,  td.cell-gf, td.cell-ga, .cell-point{
+        font-size: 14px;
+    }
+
+    td.cell-point{
+        color: #025FEB;
+        font-weight: bold;
+    }
+
+/* ===========================================================================
+   View (999 * 700 pixels) to (750 * 700 pixels)
+/* ========================================================================== */
+    @media (max-width:999px) and (min-width:750px){
+        .cell-team{
+            width: 40%;
+        }
+
+        .cell-mp, .cell-ga, .cell-gf{
+            width: 15%;
+        }
+
+        .cell-point{
+            width: 20%;
+        }
+    }
+
+
+/* ===========================================================================
+    View MAX (500 x 700 pixels)
+/* ========================================================================== */
+    @media (max-width:749px){
+        
+        .cell-gf, .cell-ga{
+            display: none;
+        }
+        
+        .cell-gd{
+            display: table-cell;
+            text-align: center;
+        }
+
+        .cell-team{
+            width: 55%;
+        }
+
+        .cell-mp, .cell-gd{
+            width: 15%;
+        }
+
+        .cell-point{
+            width: 20%;
+        }
+
+    }

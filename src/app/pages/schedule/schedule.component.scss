@@ -1,0 +1,94 @@
+/* ====================================================================
+   Style Table Schedule
+======================================================================= */
+  .cell-time{
+    width: 5%;
+    text-align: end;
+  }
+
+  .cell-stadium{
+    width: 21%;
+    text-align: start;
+    padding-left: 55px;
+  }
+
+  .cell-home-team{
+    width: 25%;
+    text-align: end;
+  }
+
+  .cell-result{
+    width: 9%;
+    text-align: center;
+  }
+
+  .cell-away-team{
+    width: 25%;
+    text-align: start;
+  }
+
+  .table tr:nth-child(even) {
+    background-color: #F6F7F7; /* Style for even rows */
+  }
+    
+  .table tr:nth-child(odd) {
+    background-color: #ffffff; /* Style for odd rows */
+  }
+
+/* ====================================================================
+   Style Table Body
+======================================================================= */
+  td.cell-time,td.cell-stadium{
+    font-size: 14px;
+  }
+
+  td.cell-home-team, td.cell-result, td.cell-away-team{
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .cell-home-team-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .cell-away-team-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .result-container{
+    display: flex;
+    justify-content: center;
+  }
+  .result-container div:nth-child(2) {
+    margin-right: 2px;
+    margin-left: 2px;
+  }
+
+
+/* ===========================================================================
+    View (999 * 700 pixels) to (750 * 700 pixels)
+/* ========================================================================== */
+  @media (max-width:999px) and (min-width:750px){
+    .cell-time{
+      width: 10%;
+    }
+    .cell-stadium{
+      display: none;
+    }
+  }
+
+/* ===========================================================================
+    View mAX (500 x 700 pixels)
+/* ========================================================================== */
+  @media (max-width:749px){
+    .cell-result{
+      width: 15%;
+    }
+    .cell-time, .cell-stadium{
+      display: none;
+    }
+  }
